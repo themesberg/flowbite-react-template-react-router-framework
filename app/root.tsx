@@ -7,6 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
+import { ThemeInit } from "../.flowbite-react/init";
 import type { Route } from "./+types/root";
 
 import "./app.css";
@@ -35,6 +36,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <ThemeModeScript />
       </head>
       <body>
+        <ThemeInit />
         {children}
         <ScrollRestoration />
         <Scripts />
